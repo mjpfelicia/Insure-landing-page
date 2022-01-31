@@ -1,0 +1,627 @@
+    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@500;600;700;800&family=Montserrat:ital,wght@1,700&family=Poppins:ital,wght@0,500;0,600;1,700&family=Rubik:ital,wght@0,400;0,500;1,300&display=swap');
+    @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap");
+    *,
+    *::before,
+    *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+    }
+    
+     :root {
+        --cor-violeta-escuro: hsl(256, 26%, 20%);
+        --cor-azul-acinzentado: hsl(216, 30%, 68%);
+        --cor-violeta-muito-escuro: hsl(270, 9%, 17%);
+        --cor-violeta-acinzentado-escuro: hsl(273, 4%, 51%);
+        --cor-cinza-muito-claro: hsl(0, 0%, 98%);
+    }
+    
+    html {
+        font-size: 62.5%;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: "Karla";
+        margin: 0 auto;
+    }
+    
+    img {
+        width: 100%;
+        display: block;
+    }
+    
+    h1,
+    h2 {
+        font-family: "DM Serif Display";
+        color: var(--cor-cinza-muito-claro);
+        font-weight: 400;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+    }
+    
+    p {
+        line-height: 1.5;
+    }
+    
+    li,
+    ul {
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none;
+        color: var(--cor-cinza-muito-claro);
+        font-size: 2rem;
+        padding: 1.2rem;
+        letter-spacing: 1.36px;
+        font-weight: 400;
+        transition: 0.2s ease;
+    }
+    
+    a:hover {
+        color: var( --cor-azul-acinzentado);
+    }
+    
+    .btn {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 1.3rem;
+        cursor: pointer;
+        border: 1.5px solid var(--cor-cinza-muito-claro);
+        color: var(--cor-cinza-muito-claro);
+        transition: all 0.3s ease-in-out;
+        height: 4rem;
+    }
+    
+    .btn:hover {
+        background: var(--cor-cinza-muito-claro);
+        color: var(--cor-violeta-escuro);
+    }
+    
+    .btn--humanizing_your_insurance {
+        width: 14.6rem;
+        height: 4rem;
+        font-weight: 700;
+        line-height: 1.52rem;
+        letter-spacing: 1.5px;
+        justify-self: center;
+        padding: 1.2rem;
+        margin-top: 1.4rem;
+    }
+    
+    .btn--find {
+        letter-spacing: 0.15rem;
+        line-height: 1.52rem;
+        padding: 1rem 2.5rem;
+    }
+    
+    .conteudo--humanizing_your_insurance:before {
+        border-top: 1px solid var(--cor-violeta-acinzentado-escuro);
+        content: "";
+        position: absolute;
+        width: 15rem;
+        top: 58rem;
+        left: 22%;
+    }
+    
+    .conteudo--different::before {
+        border-top: 1px solid var(--cor-azul-acinzentado);
+        left: 50%;
+        margin: -3.2rem 0 0 -7.5rem;
+    }
+    
+    .find {
+        padding-bottom: 14rem;
+    }
+    
+    .find .content_menu_nav {
+        width: 87%;
+        margin: 0 auto;
+    }
+    
+    .find__content {
+        text-align: center;
+        background: var(--cor-violeta-escuro);
+        padding: 7.2rem 2.4rem 7rem;
+        position: relative;
+        z-index: 2;
+        line-height: 4rem;
+        overflow: hidden;
+    }
+    
+    .find__content::before {
+        content: url(./images/bg-pattern-how-we-work-mobile.svg);
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+    
+    .find .titulo {
+        font-size: 4rem;
+        letter-spacing: -0.56px;
+        padding-bottom: 4.2rem;
+    }
+    
+    .topnav {
+        padding: 1.9rem 0.6rem;
+        background: var(--cor-cinza-muito-claro);
+        position: relative;
+        z-index: 1;
+    }
+    
+    .topnav__menu {
+        padding: 0.5rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: var(--cor-cinza-muito-claro);
+        z-index: 10;
+        position: relative;
+    }
+    
+    a {
+        padding: 0;
+    }
+    
+    .menu_img {
+        width: 3.2rem;
+        height: 3.2rem;
+        cursor: pointer;
+        background-image: url(./images/icon-hamburger.svg);
+    }
+    
+    .menu_links {
+        transform: scaleY(0);
+        position: absolute;
+        height: 58.7rem;
+        width: 100%;
+        top: 6.4rem;
+        left: 0;
+        transition: all 0.3s ease-in-out;
+        background: var(--cor-violeta-escuro);
+        transform-origin: top right;
+        text-align: center;
+        padding: 3rem 0 4rem;
+        font-weight: 700;
+        z-index: -1;
+        text-transform: uppercase;
+        margin: 0 auto;
+        list-style: none;
+    }
+    
+    .menu_links::after {
+        content: "";
+        position: absolute;
+        background-color: var(--cor-violeta-muito-escuro);
+        position: fixed;
+        z-index: 100;
+        opacity: 0;
+        left: 0;
+        width: 100vw;
+        top: 59rem;
+        opacity: 1;
+    }
+    
+    .menu_links li {
+        line-height: 4rem;
+        padding: 1.1rem 0;
+    }
+    
+    .menu_links li:last-child::after {
+        content: "";
+        background-image: url(./images/bg-pattern-mobile-nav.svg);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 218px;
+        width: 100%;
+        background-size: cover;
+    }
+    
+    .plans {
+        margin-top: 0.8rem;
+    }
+    
+    .plans a {
+        padding: 1.5rem 10rem;
+    }
+    
+    #img_menu {
+        display: none;
+    }
+    
+    #img_menu:checked+.menu_img {
+        background-image: url(./images/icon-close.svg);
+    }
+    
+    #img_menu:checked~.menu_links {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+    }
+    
+    .humanizing_your_insurance {
+        text-align: center;
+        background: var(--cor-violeta-escuro);
+    }
+    
+    .humanizing_your_insurance .titulo::before {
+        content: url(./images/bg-pattern-intro-left-mobile.svg);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+    
+    .humanizing_your_insurance .titulo::after {
+        content: url(./images/bg-pattern-intro-right-mobile.svg);
+        position: absolute;
+        bottom: -18rem;
+        right: 0rem;
+    }
+    
+    .humanizing_your_insurance .titulo h1 {
+        font-size: 4.8rem;
+        line-height: 1;
+        letter-spacing: -0.67px;
+        position: relative;
+    }
+    
+    .humanizing_your_insurance .titulo {
+        color: var(--cor-cinza-muito-claro);
+        padding: 9.1rem 2.5rem 9.3rem;
+        position: relative;
+        display: grid;
+        grid-template-rows: repeat(3, max-content);
+        row-gap: 1.7rem;
+    }
+    
+    .humanizing_your_insurance .titulo p {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        opacity: .8;
+    }
+    
+    .different {
+        text-align: center;
+        padding: 14rem 0 12.3rem 0;
+    }
+    
+    .different__titulo {
+        color: var(--cor-violeta-escuro);
+        font-size: 4.8rem;
+        letter-spacing: -0.67px;
+        padding-top: 3.2rem;
+    }
+    
+    .different_li {
+        padding-top: 7.2rem;
+    }
+    
+    .different_li li {
+        display: grid;
+        grid-template-rows: 10rem 4rem 9rem;
+        grid-gap: 1.8rem;
+        max-width: 60rem;
+        margin: 0 auto;
+    }
+    
+    .different_li li:not(:last-child) {
+        padding-bottom: 4rem;
+    }
+    
+    .different_li li img {
+        width: 8.6rem;
+        height: 8.6rem;
+        margin: 0 auto;
+    }
+    
+    .different_li li h2 {
+        color: var(--cor-violeta-escuro);
+        font-size: 2.8rem;
+        letter-spacing: -0.39px;
+    }
+    
+    .different_li li p {
+        color: var(--cor-violeta-acinzentado-escuro);
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        margin-top: -0.5rem;
+        padding: 0 0.7rem;
+        opacity: 0.9;
+    }
+    
+    .footer {
+        background: var(--cor-cinza-muito-claro);
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 1.3rem;
+        line-height: 1.52rem;
+        letter-spacing: 0.15rem;
+        font-weight: bold;
+        padding: 8.8rem 0 0;
+        position: relative;
+        z-index: 2;
+        overflow-x: hidden;
+    }
+    
+    .footer::before {
+        content: url(./images/bg-pattern-footer-mobile.svg);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    
+    .footer h3 {
+        padding-bottom: 3.6rem;
+        color: var(--cor-violeta-acinzentado-escuro);
+    }
+    
+    .footer ul {
+        padding-bottom: 4rem;
+    }
+    
+    .footer hr {
+        width: 100%;
+        margin-bottom: 3.9rem;
+        opacity: 0.5;
+    }
+    
+    .footer_icon .footerLogo {
+        width: 11.12rem;
+        margin: 0 auto;
+        padding: 0.3rem 0 3.2rem;
+    }
+    
+    .footer_icon .icons {
+        display: grid;
+        grid-template-columns: repeat(4, 2.4rem);
+        column-gap: 1.6rem;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 3.6rem;
+    }
+    
+    .footer_icon .icons svg {
+        fill: var(--cor-violeta-acinzentado-escuro);
+    }
+    
+    .footer .conteudo_footer li:not(:last-child) {
+        padding-bottom: 1.6rem;
+    }
+    
+    .footer .conteudo_footer a {
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: var(--cor-violeta-escuro);
+        opacity: 0.9;
+    }
+    
+    @media screen and (min-width: 768px) {
+        .plans a {
+            padding: 1.15rem 2.7rem;
+        }
+        .plans {
+            margin: 0 0 0 0.8rem;
+        }
+        .humanizing_your_insurance {
+            position: relative;
+            text-align: left;
+            max-height: 60rem;
+        }
+        .humanizing_your_insurance::before {
+            content: url(./images/bg-pattern-intro-left-desktop.svg);
+            position: absolute;
+            bottom: -33.5rem;
+            left: 0;
+        }
+        .humanizing_your_insurance::after {
+            content: url(./images/bg-pattern-intro-right-desktop.svg);
+            position: absolute;
+            top: -8rem;
+            right: 0;
+        }
+        .humanizing_your_insurance__content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .humanizing_your_insurance .content_menu_nav {
+            width: 100%;
+        }
+        .humanizing_your_insurance .image {
+            flex: 1;
+            order: 2;
+        }
+        .humanizing_your_insurance .titulo::before {
+            display: none;
+        }
+        .humanizing_your_insurance .titulo {
+            flex: 1;
+            order: 1;
+            padding-left: 0;
+        }
+        .humanizing_your_insurance .titulo::after {
+            display: none;
+        }
+        .humanizing_your_insurance .titulo h1 {
+            font-size: 5.5rem;
+            position: relative;
+        }
+        a {
+            color: var(--cor-violeta-acinzentado-escuro);
+            font-size: 1.3rem;
+            letter-spacing: 1.5px;
+            font-weight: bold;
+            padding: 0;
+        }
+        a:hover {
+            color: var(--cor-violeta-escuro);
+        }
+        .btn--nav {
+            background: none;
+            color: var(--cor-violeta-escuro);
+            font-size: 1.3rem;
+            letter-spacing: 1.5px;
+            font-weight: bold;
+            border: 1px solid var(--cor-violeta-escuro);
+            width: 14.6rem;
+        }
+        .btn--nav:hover {
+            background: var(--cor-violeta-escuro);
+            color: var(--cor-cinza-muito-claro);
+        }
+        .btn--humanizing_your_insurance {
+            margin-top: 0;
+            justify-self: left;
+            width: auto;
+            padding: 1.15rem 2.65rem;
+        }
+        .topnav {
+            padding: 1.8rem 0;
+        }
+        .topnav__menu {
+            padding: 0;
+        }
+        .img_logo {
+            padding-top: 0;
+            padding-left: 0.3rem;
+        }
+        .menu_img {
+            display: none;
+        }
+        .menu_links li:last-child::after {
+            display: none;
+        }
+        .menu_links {
+            position: static;
+            display: flex;
+            display: grid;
+            grid-template-columns: repeat(4, max-content);
+            column-gap: 2.8rem;
+            transform: none;
+            background: transparent;
+            height: unset;
+            width: unset;
+            padding: 0;
+            margin: 0;
+            padding-top: 0.3rem;
+            column-gap: 2.4rem;
+        }
+        .content_menu_nav {
+            max-width: 111rem;
+            margin: 0 auto;
+            width: 90%;
+        }
+        .different_li {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 3rem;
+            padding-top: 7.9rem;
+        }
+        .footer_icon .icons {
+            padding-bottom: 3rem;
+        }
+        .content_footer {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            text-align: left;
+            grid-gap: 3rem;
+            padding: 0.8rem 0 0.9rem;
+        }
+        .footer::before {
+            content: url(./images/bg-pattern-footer-desktop.svg);
+        }
+        .footer_icon {
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer {
+            padding: 6.4rem 0 0 0;
+        }
+    }
+    
+    @media screen and (min-width: 1200px) {
+        .humanizing_your_insurance .image img {
+            margin-left: 1rem;
+            width: 540px;
+            transform: translateY(10.5rem);
+        }
+        .humanizing_your_insurance .titulo {
+            padding: 0 2rem 1.5rem 0;
+            grid-template-rows: 14rem 8rem 5rem;
+            row-gap: 1.4rem;
+        }
+        .humanizing_your_insurance .titulo h1 {
+            font-size: 7.2rem;
+            line-height: 89%;
+            letter-spacing: -1px;
+            padding-right: 2rem;
+        }
+        .humanizing_your_insurance .titulo p {
+            padding-top: 0.2rem;
+        }
+        .different__titulo {
+            font-size: 7.2rem;
+            letter-spacing: -1px;
+        }
+        .different_li li {
+            max-width: 35rem;
+        }
+        .different_li li img {
+            margin: 0;
+        }
+        .different_li li p {
+            padding: 0;
+        }
+        .find .titulo {
+            font-size: 5.6rem;
+            max-width: 47.5rem;
+        }
+        .btn--humanizing_your_insurance {
+            margin-top: 1.6rem;
+        }
+        .btn--find {
+            padding: 1rem 2.2rem;
+        }
+        .conteudo--humanizing_your_insurance::before {
+            display: block;
+        }
+        .conteudo--different::before {
+            left: unset;
+            margin: -4.6rem 0 0 0;
+        }
+        .find {
+            padding-bottom: 15rem;
+        }
+        .find__content::before {
+            content: url(./images/bg-pattern-how-we-work-desktop.svg);
+        }
+        .find__content {
+            text-align: left;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 7rem 8rem 6.8rem 8.1rem;
+        }
+        .find .titulo {
+            padding-bottom: 0;
+            letter-spacing: -0.78px;
+            line-height: 100%;
+            max-width: 55%;
+            font-size: 4.5rem;
+        }
+        .different {
+            padding-top: 31.9rem;
+        }
+        .different {
+            text-align: left;
+            position: relative;
+            padding-top: 18rem;
+            padding-bottom: 10.2rem;
+        }
+    }
