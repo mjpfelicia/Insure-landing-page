@@ -3,7 +3,7 @@ const iconHamburger = document.querySelector("#img_menu");
 const closeSvg = document.querySelector(".menu_img");
 const menu_links = document.querySelector(".menu_links");
 
-container.addEventListener("click", (ev) => {
+iconHamburger.addEventListener("click", (ev) => {
 
 
     if (menu_links.style.display === "block") {
